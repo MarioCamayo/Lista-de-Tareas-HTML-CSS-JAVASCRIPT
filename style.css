@@ -1,0 +1,112 @@
+:root{
+  --orange:#d95550;
+  --lightOrange:#dd6862;
+  --veryLightOrange:#f89e8b;
+  --gray:#55557b;
+  --white:#fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--orange);
+}
+
+.logo{
+  width: 300px;
+  display:block;
+  margin: 0 auto;
+  padding: 20px 20px 0px 20px;
+} 
+
+
+h1{
+  color: var(--white);
+  text-align: center;
+}
+
+form{
+  width: 400px;
+  margin: 45px auto;
+  text-align: center;
+}
+
+form input[type="text"]{
+  border-style: none;
+  outline: none;
+  background-color: var(--white);
+  color: var(--gray);
+  font-size: 1.5em;
+  border-radius: 4px;
+  width: 350px;
+  height: 40px;
+  font-weight: 500;
+
+}
+
+
+
+form input[type="text"]::placeholder{ 
+  color: var(--gray);
+  padding: 15px;
+  text-align: center;
+
+}
+
+form input[type="submit"]{
+  font-size: 2em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-style: none;
+  color: var(--orange);
+  font-weight: 500;
+  padding-bottom: 40px;
+  margin-left: 5px;
+
+}
+
+form input[type="submit"]:hover{
+  cursor: pointer;
+  background-color: var(--veryLightOrange);
+  color: var(--white);
+}
+
+.list-container{
+  width: 500px;
+  margin: 0 auto;
+
+}
+
+.task-container{
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+  font-weight: 500;
+  background-color: var(--white);
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.closeBtn{
+  width: 25px;
+  height: 25px;
+}
+
+.closeBtn:hover{
+  cursor: pointer;
+}
+
+#stats{
+  margin-top:25px;
+  font-size: 1.3em;
+  color: var(--white);
+  text-align: center;
+
+}
